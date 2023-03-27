@@ -12,15 +12,17 @@ export default function Document() {
             <body>
             <Main/>
             <NextScript>
-                window.dataLayer = window.dataLayer || [];
-                if (typeof window !== 'undefined'){
-                function gtag() {
-                    window.dataLayer.push(arguments)
-                }
-            }
-                gtag('js', new Date());
+                {`
+                    window.dataLayer = window.dataLayer || [];
+                    if (typeof window !== 'undefined'){
+                        function gtag() {
+                            window.dataLayer.push(arguments)
+                        }
+                    }
+                    gtag('js', new Date());
 
-                gtag('config', 'G-TE6HHSESG5');
+                    gtag('config', 'G-TE6HHSESG5');
+                `}
             </NextScript>
             </body>
         </Html>
